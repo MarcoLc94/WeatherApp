@@ -1,0 +1,76 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .redArrow {
+      animation: bounce 2s ease-in-out infinite;
+      transform: rotate(270deg);
+      width: 40vw;
+      padding: 10%;
+  }
+
+  .txt {
+      width: 80vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #h1 {
+      text-align: center;
+      font-weight: 200;
+  }
+
+  @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0); /* Posición inicial */
+      }
+      40% {
+          transform: translateY(-30px); /* Eleva la imagen */
+      }
+      60% {
+          transform: translateY(-15px); /* Descenso a mitad de camino */
+      }
+  }
+}
+
+.png-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.iconpng {
+  width: 10vw;
+  margin: 25px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bouncing {
+  animation: bounce 2s infinite;
+}
+
+.invalid-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+      margin: 10px;
+      font-size: 30px;
+  }
+}
